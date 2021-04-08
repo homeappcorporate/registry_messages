@@ -1,0 +1,21 @@
+{
+    "name": "homeappcorporate/registry_messages",
+    "description": "Events/Commands classes emited by registry and handeled by clients",
+    "type": "library",
+    "require-dev": {
+        "vimeo/psalm": "^4.7",
+        "friendsofphp/php-cs-fixer": "^2.18"
+    },
+    "authors": [
+        {
+            "name": "Legion112",
+            "email": "ageev.maks2014@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "HomeappCorporate\\RegistryMessages": "src"
+        }
+    },
+    "require": {}
+}
