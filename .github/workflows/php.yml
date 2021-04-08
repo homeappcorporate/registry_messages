@@ -27,3 +27,5 @@ jobs:
 
     - name: Code style and psalm
       run: composer run-script ci
+    - name: "Check for BC breaks"
+      run: "vendor/bin/roave-backward-compatibility-check"
