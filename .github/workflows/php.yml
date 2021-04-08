@@ -40,6 +40,6 @@ jobs:
           coverage: "none"
           php-version: "7.4" # https://github.com/Roave/BackwardCompatibilityCheck/issues/283
       - name: "Install Backwards Compatibility Checker"
-        run: "composer require roave/backward-compatibility-check --no-interaction"
+        run: "composer require roave/backward-compatibility-check --no-interaction --quite"
       - name: "Check for BC breaks"
         run: "vendor/bin/roave-backward-compatibility-check"
