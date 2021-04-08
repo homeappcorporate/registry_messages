@@ -27,5 +27,19 @@ jobs:
 
     - name: Code style and psalm
       run: composer run-script ci
-    - name: "Check for BC breaks"
-      run: "vendor/bin/roave-backward-compatibility-check"
+  roave-backwards-compatibility-check:
+    name: Roave Backwards Compatibility Check
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+      - name: "Install PHP"
+        uses: shivammathur/setup-php@v2
+        with:
+          coverage: "none"
+          php-version: "7.4" # https://github.com/Roave/BackwardCompatibilityCheck/issues/283
+      - name: "Install dependencies"
+        run: "composer install --no-interaction"
+      - name: "Check for BC breaks"
+        run: "vendor/bin/roave-backward-compatibility-check"
