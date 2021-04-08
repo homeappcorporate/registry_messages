@@ -16,6 +16,12 @@
             "email": "ageev.maks2014@gmail.com"
         }
     ],
+    "scripts": {
+        "ci": [
+            "vendor/bin/php-cs-fixer fix --config ./.php_cs.dist -v --dry-run --stop-on-violation  --using-cache=no",
+            "vendor/bin/psalm"
+        ]
+    },
     "autoload": {
         "psr-4": {
             "HomeappCorporate\\RegistryMessages\\": "src/"
