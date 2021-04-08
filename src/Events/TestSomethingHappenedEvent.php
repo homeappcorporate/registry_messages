@@ -7,11 +7,9 @@ namespace HomeappCorporate\RegistryMessages\Events;
 final class TestSomethingHappenedEvent
 {
     public string $description;
-    public int $number;
 
-    public function __construct(int $number, string $description)
+    public function __construct(string $description)
     {
-        $this->number = $number;
         $this->description = $description;
     }
 }
