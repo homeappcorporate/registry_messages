@@ -8,9 +8,12 @@ on:
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
-
+    strategy:
+      fail-fast: true
+      matrix:
+        php: [8.0, 7.4]
+        stability: [prefer-stable]
     steps:
     - uses: actions/checkout@v2
 
@@ -21,7 +24,6 @@ jobs:
       id: composer-cache
       uses: actions/cache@v2
       with:
-        php-version: '7.4'
         path: vendor
         key: ${{ runner.os }}-php-${{ hashFiles('**/composer.lock') }}
         restore-keys: |

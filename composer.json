@@ -3,7 +3,7 @@
     "description": "Events/Commands classes emited by registry and handeled by clients",
     "type": "library",
     "require": {
-        "php": "^7.4"
+        "php": "^7.4|^8.0"
     },
     "require-dev": {
         "vimeo/psalm": "^4.7",
