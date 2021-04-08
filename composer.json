@@ -26,5 +26,6 @@
         "psr-4": {
             "HomeappCorporate\\RegistryMessages\\": "src/"
         }
-    }
+    },
+    "license": "proprietary"
 }
