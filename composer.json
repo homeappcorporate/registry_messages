@@ -1,6 +1,6 @@
 {
-    "name": "homeappcorporate/registry_messages",
-    "description": "Events/Commands classes emited by registry and handeled by clients",
+    "name": "homeapp/registry-messages",
+    "description": "Events/Commands classes emitted by registry and handled by clients",
     "type": "library",
     "require": {
         "php": "^7.4|^8.0"
@@ -24,7 +24,7 @@
     },
     "autoload": {
         "psr-4": {
-            "HomeappCorporate\\RegistryMessages\\": "src/"
+            "Homeapp\\RegistryMessages\\": "src/"
         }
     },
     "license": "proprietary"

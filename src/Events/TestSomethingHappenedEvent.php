@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace HomeappCorporate\RegistryMessages\Events;
+namespace Homeapp\RegistryMessages\Events;
 
 final class TestSomethingHappenedEvent
 {
