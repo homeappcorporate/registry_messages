@@ -7,7 +7,7 @@ namespace Homeapp\RegistryMessages\Events\RealtyChangedEvents;
 /**
  * @psalm-immutable
  */
-class RealtyChangedEvent
+final class RealtyChangedEvent
 {
     public Realty $old;
     public Realty $new;

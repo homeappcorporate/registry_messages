@@ -7,7 +7,7 @@ namespace Homeapp\RegistryMessages\Events\RealtyChangedEvents;
 /**
  * @psalm-immutable
  */
-class Realty
+final class Realty
 {
     public int $price;
     public ?string $title;
