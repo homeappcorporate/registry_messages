@@ -13,3 +13,5 @@ final class TestSomethingHappenedEvent
         $this->description = $description;
     }
 }
+
+
