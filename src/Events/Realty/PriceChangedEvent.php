@@ -11,10 +11,12 @@ final class PriceChangedEvent
 {
     public int $old;
     public int $new;
+    public int $realtyId;
 
-    public function __construct(int $old, int $new)
+    public function __construct(int $old, int $new, int $realtyId)
     {
         $this->old = $old;
         $this->new = $new;
+        $this->realtyId = $realtyId;
     }
 }
