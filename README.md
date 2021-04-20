@@ -3,3 +3,5 @@
 в целевом сервисе(client
 ## Installation 
 `composer require homeapp/registry-messages`
+## To fix code style
+`vendor/bin/php-cs-fixer fix --config ./.php_cs.dist --using-cache=no`
