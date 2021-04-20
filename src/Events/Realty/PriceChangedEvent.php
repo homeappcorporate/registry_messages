@@ -9,6 +9,7 @@ namespace Homeapp\RegistryMessages\Events\Realty;
  */
 final class PriceChangedEvent
 {
+    //TODO: name it $oldPrice & $newPrice
     public int $old;
     public int $new;
     public int $realtyId;
