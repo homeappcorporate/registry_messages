@@ -10,10 +10,10 @@ namespace Homeapp\RegistryMessages\Events\Realty;
 final class ReadyDateIsSoonEvent
 {
     public int $realtyId;
-    public int $year;
-    public int $quarter;
+    public ?int $year;
+    public ?int $quarter;
 
-    public function __construct(int $realtyId, int $year, int $quarter)
+    public function __construct(int $realtyId, int $year = null, int $quarter = null)
     {
         $this->realtyId = $realtyId;
         $this->year = $year;
